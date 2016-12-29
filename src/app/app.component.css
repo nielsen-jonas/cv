@@ -11,9 +11,18 @@
     height: 100vh;
 }
 
-#sidebar {
+#sidebar-container {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+}
+
+#sidebar-content {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#sidebar-content::-webkit-scrollbar {
+    display: none;
 }
