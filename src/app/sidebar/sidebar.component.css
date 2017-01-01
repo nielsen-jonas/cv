@@ -1,9 +1,16 @@
-#wrapper {
+.wrapper {
+    margin: 2rem 14%;
+}
+
+.image-container {
     text-align: center;
-    margin: 4rem;
 }
 
 img {
+    margin-bottom: 4rem;
     max-width: 100%;
-    max-height: 24rem;
+}
+
+#sidebar-contact {
+    margin-top: 4rem;
 }

@@ -1,14 +1,11 @@
-#header-bg {
-    background-color: grey;
-}
-
-#footer-bg {
-    background-color: lightgrey;
+.component-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 #sidebar-bg {
-    background-color: grey;
     height: 100vh;
+    background-color: #EEE;;
 }
 
 #sidebar-container {

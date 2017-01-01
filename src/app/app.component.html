@@ -1,33 +1,55 @@
 <div id="sidebar-container" class="hidden-xs">
     <div class="container">
         <div class="row">
-            <div class="col-xs-8">
+            <div class="col-xs-8 col-md-9">
             </div>
-            <div id="sidebar-bg" class="col-xs-4">
-                <div id="sidebar-content">
+            <div id="sidebar-bg" class="col-xs-4 col-md-3">
+                <div id="sidebar-content" class="component-container">
                     <cv-sidebar></cv-sidebar>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id=header-bg>
+<!--
+<div id="header-bg">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-sm-8 component-container">
                 <cv-header></cv-header>
             </div>
             <div class="col-xs-0 col-sm-4"></div>
         </div>
     </div>
 </div>
-<div id=footer-bg>
+-->
+<div id="mobile-welcome-bg">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-sm-8 col-md-9 component-container">
+                <cv-mobile-welcome></cv-mobile-welcome>
+            </div>
+            <div class="col-xs-0 col-sm-4 col-md-3"></div>
+        </div>
+    </div>
+</div>
+<div id="technologies-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-9 component-container">
+                <cv-technologies></cv-technologies>
+            </div>
+            <div class="col-xs-0 col-sm-4 col-md-3"></div>
+        </div>
+    </div>
+</div>
+<div id="footer-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-9 component-container">
                 <cv-footer></cv-footer>
             </div>
-            <div class="col-xs-0 col-sm-4"></div>
+            <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
 </div>
