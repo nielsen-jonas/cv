@@ -1,0 +1,12 @@
+li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+ul > li > ul {
+    list-style-type: disc;
+}
+
+ul > li > ul > li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
