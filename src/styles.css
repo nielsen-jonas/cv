@@ -10,3 +10,7 @@ body, .cv-base-color {
 dl > dt:not(:first-of-type) {
     margin-top: 1rem;
 }
+
+.panel-body > h3 {
+    margin-top: 1rem;
+}
