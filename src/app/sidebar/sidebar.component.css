@@ -14,3 +14,7 @@ img {
 #sidebar-contact {
     margin-top: 4rem;
 }
+
+li {
+    margin: 1rem 0;
+}
