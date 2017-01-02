@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 2rem 14%;
+    margin: 1rem 14%;
 }
 
 .image-container {
@@ -7,14 +7,14 @@
 }
 
 img {
-    margin-bottom: 4rem;
     max-width: 100%;
-}
-
-#sidebar-contact {
-    margin-top: 4rem;
 }
 
 li {
     margin: 1rem 0;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
