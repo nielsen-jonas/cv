@@ -4,7 +4,15 @@ body::-webkit-scrollbar {
 }
 
 body, .cv-base-color {
-    color: #333;
+    color: #222;
+}
+
+.cv-light-color {
+    color: #FFF;
+}
+
+.cv-unstyle-border-bottom {
+    border-bottom: none;
 }
 
 dl > dt:not(:first-of-type) {
@@ -13,4 +21,34 @@ dl > dt:not(:first-of-type) {
 
 .panel-body > h3 {
     margin-top: 1rem;
+}
+
+a, a:link, a:visited {
+    color: #008C9E;
+}
+
+a:hover, a:active {
+    color: #005F6B;
+}
+
+.label-success {
+    background-color: #008C9E;
+}
+
+
+#sidebar-bg {
+    background-color: #343838;
+}
+
+.image-fading-layer {
+    background-color: #005F6B;
+}
+
+#sidebar a {
+    color: #FFF;
+}
+
+.image-layer {
+    background-color: #00B4CC;
+    background-blend-mode: multiply;
 }

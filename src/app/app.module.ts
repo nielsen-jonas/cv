@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { LazyLoadImageModule } from 'ng2-lazyload-image';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -34,7 +36,8 @@ import { PersonalInformationComponent } from './pages/personal-information/perso
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

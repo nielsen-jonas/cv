@@ -33,7 +33,9 @@
         </div>
     </div>
 </div>
-<div id="technologies">
+<div id="technologies" class="dynamic-container">
+    <div class="image-layer" [lazyLoad]="getImage1()"></div>
+    <div class="image-fading-layer"></div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container">
@@ -53,7 +55,9 @@
         </div>
     </div>
 </div>
-<div id="portfolio">
+<div id="portfolio" class="dynamic-container">
+    <div class="image-layer" [lazyLoad]="getImage2()"></div>
+    <div class="image-fading-layer"></div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container">
@@ -80,7 +84,9 @@
         </div>
     </div>
 </div>
-<div id="education">
+<div id="education" class="dynamic-container">
+    <div class="image-layer" [lazyLoad]="getImage3()"></div>
+    <div class="image-fading-layer"></div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container">
