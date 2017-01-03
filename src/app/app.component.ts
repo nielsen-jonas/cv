@@ -7,24 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'cv works!';
-  private image1 = this.getImgUrl();
-  private image2 = this.getImgUrl();
-  private image3 = this.getImgUrl();
 
   ngOnInit() {
       skrollr.init();
-  }
-
-  public getImage1(): string {
-      return this.image1;
-  }
-
-  public getImage2(): string {
-      return this.image2;
-  }
-
-  public getImage3(): string {
-      return this.image3;
   }
 
   private getWidth(): string {
@@ -35,8 +20,16 @@ export class AppComponent implements OnInit {
       return window.innerHeight.toString();
   }
 
-  private getImgUrl(): string {
-      return 'https://unsplash.it/' + this.getWidth() + '/' + this.getHeight() + '/?image=' + this.getRandomInt( 0, 1000 );
+  public imgTechnologies(): string {
+      return 'https://source.unsplash.com/1PP0Fc-KSd4/' + this.getWidth() + 'x' + this.getHeight();
+  }
+
+  public imgPortfolio(): string {
+      return 'https://source.unsplash.com/yZLkK1XfyHg/' + this.getWidth() + 'x' + this.getHeight();
+  }
+
+  public imgEducation(): string {
+      return 'https://source.unsplash.com/Nw3ddCwbUKg/' + this.getWidth() + 'x' + this.getHeight();
   }
   
   private getRandomInt(min: number, max: number): string {
