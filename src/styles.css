@@ -89,3 +89,7 @@ hr {
 .cv-image-layer.ng2-lazyloaded {
     opacity: 1;
 }
+
+.panel-body > h3 {
+    padding-bottom: 1rem;
+}
