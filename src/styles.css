@@ -92,6 +92,10 @@ hr {
     opacity: 1;
 }
 
+.page-header {
+    margin-top: 1rem;
+}
+
 .panel-body > h3 {
     padding-bottom: 1rem;
 }
