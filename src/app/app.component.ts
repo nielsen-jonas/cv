@@ -9,7 +9,10 @@ export class AppComponent implements OnInit {
   title = 'cv works!';
 
   ngOnInit() {
-      skrollr.init();
+      let s = skrollr.init();
+      if (s.isMobile()) {
+          s.destroy()
+      }
   }
 
   private getWidth(): string {
