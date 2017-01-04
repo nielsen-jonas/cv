@@ -11,11 +11,19 @@ body::-webkit-scrollbar {
 
 body, .cv-base-color {
     color: #222;
-    font-family: Helvetica, sans-serif;
 }
 
-.cv-font-1 {
+nav, h1, h2, h3 {
+    font-family: Oswald, Helvetica, sans-serif;
+}
+
+#author {
     font-family: UnifrakturCook, Helvetica, sans-serif;
+}
+
+#subheading {
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 h2.cv-font-1 {
