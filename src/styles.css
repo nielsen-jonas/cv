@@ -5,9 +5,11 @@
  *
  */
 
+/*
 body::-webkit-scrollbar {
     display: none;
 }
+*/
 
 body, .cv-base-color {
     color: #222;
