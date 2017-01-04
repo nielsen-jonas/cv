@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   public imgTechnologies(): string {
-      return 'https://source.unsplash.com/1PP0Fc-KSd4/' + this.getWidth() + 'x' + this.getHeight();
+      return 'https://source.unsplash.com/IgNebBEjhvw/' + this.getWidth() + 'x' + this.getHeight();
   }
 
   public imgPortfolio(): string {
