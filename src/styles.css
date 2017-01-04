@@ -5,6 +5,15 @@ body::-webkit-scrollbar {
 
 body, .cv-base-color {
     color: #222;
+    font-family: Helvetica, sans-serif;
+}
+
+.cv-font-1 {
+    font-family: UnifrakturCook, Helvetica, sans-serif;
+}
+
+h2.cv-font-1 {
+    font-size: 5rem;
 }
 
 .cv-light-color {
