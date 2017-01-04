@@ -67,10 +67,6 @@ a:hover, a:active {
     border-right: 1px solid rgba(0,223,251,.2);
 }
 
-hr {
-    color: red;
-}
-
 .cv-image-container {
     position: relative;
     background-color: #005F6B;
@@ -99,3 +95,22 @@ hr {
 .panel-body > h3 {
     padding-bottom: 1rem;
 }
+
+.hr-decoration {
+    color: #005F6B;
+}
+
+.mobile-nav-item {
+    background-color: #005F6B;
+}
+
+.mobile-nav-link:link, .mobile-nav-link:visited {
+    color: white;
+}
+
+#mobile-nav-container {
+    background-color: #222;
+    color: white;
+    border-top: 1px solid rgba(0,223,251,.2);
+}
+

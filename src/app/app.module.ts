@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { CollapseModule } from 'ng2-bootstrap';
 import { LazyLoadImageModule } from 'ng2-lazyload-image';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
@@ -18,6 +19,7 @@ import { LinksComponent } from './pages/links/links.component';
 import { EducationComponent } from './pages/education/education.component';
 import { PersonalSkillsComponent } from './pages/personal-skills/personal-skills.component';
 import { PersonalInformationComponent } from './pages/personal-information/personal-information.component';
+import { MobileNavigationComponent } from './mobile-navigation/mobile-navigation.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import { PersonalInformationComponent } from './pages/personal-information/perso
     LinksComponent,
     EducationComponent,
     PersonalSkillsComponent,
-    PersonalInformationComponent
+    PersonalInformationComponent,
+    MobileNavigationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    CollapseModule,
     LazyLoadImageModule,
     Ng2PageScrollModule.forRoot()
   ],

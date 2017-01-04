@@ -1,0 +1,48 @@
+<div id="mobile-nav-container" class="navbar-fixed-bottom visible-xs">
+    <div [collapse]="isCollapsed">
+        <nav>
+            <ul id="mobile-nav" class="list-unstyled">
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#technologies">
+                        <div class="mobile-nav-item">Technologies</div>
+                    </a>
+                </li>
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#ambition">
+                        <div class="mobile-nav-item">Ambition</div>
+                    </a>
+                </li>
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#portfolio">
+                        <div class="mobile-nav-item">Portfolio</div>
+                    </a>
+                </li>
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#personal-skills">
+                        <div class="mobile-nav-item">Personal skills</div>
+                    </a>
+                </li>
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#personal-information">
+                        <div class="mobile-nav-item">Personal information</div>
+                    </a>
+                </li>
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#education">
+                        <div class="mobile-nav-item">Education</div>
+                    </a>
+                </li>
+                <li>
+                    <a (click)="isCollapsed = true;" class="mobile-nav-link" pageScroll href="#links">
+                        <div class="mobile-nav-item">Links</div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mobile-nav-toggle-container">
+        <button id="mobile-nav-toggle" (click)="isCollapsed = !isCollapsed" type="button">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+    </div>
+</div>
