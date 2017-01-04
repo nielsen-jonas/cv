@@ -36,7 +36,7 @@ a:hover, a:active {
 }
 
 
-#sidebar-bg {
+#sidebar-container {
     background-color: #343838;
 }
 
@@ -49,7 +49,6 @@ a:hover, a:active {
 }
 
 .cv-image-container {
-    position: relative;
     background-color: #00B4CC;
     background-blend-mode: multiply;
     transition: opacity 1s;

@@ -3,15 +3,11 @@
     padding-bottom: 2rem;
 }
 
-#sidebar-bg {
-    height: 100vh;
-}
-
-#sidebar {
+#sidebar-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 100vh;
+    z-index: 10;
+    max-width: 32rem;
 }
 
 #sidebar a {
