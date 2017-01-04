@@ -48,7 +48,15 @@ a:hover, a:active {
     color: #FFF;
 }
 
-.image-layer {
+.cv-image-container {
+    position: relative;
     background-color: #00B4CC;
     background-blend-mode: multiply;
+    transition: opacity 1s;
+    opacity: 0;
+
+}
+
+.cv-image-container.ng2-lazyloaded {
+    opacity: 1;
 }

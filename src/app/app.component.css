@@ -27,26 +27,9 @@
     display: none;
 }
 
-.dynamic-container {
-    position: relative;
-}
-
-.image-layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -2;
-}
-
-.image-fading-layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: opacity 1s;
-    opacity: 0;
-    z-index: -1;
+.cv-image-container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
