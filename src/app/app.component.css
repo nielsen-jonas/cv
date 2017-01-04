@@ -7,7 +7,7 @@
     position: fixed;
     height: 100vh;
     z-index: 10;
-    max-width: 28rem;
+    max-width: 22rem;
 }
 
 #sidebar a {
