@@ -18,3 +18,11 @@ hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
+
+.hr-decoration {
+    color: #005F6B;
+    overflow: hidden;
+    font-size: 2rem;
+    white-space: nowrap;
+    margin: 4rem 0;
+}
