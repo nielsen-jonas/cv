@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageScrollConfig } from 'ng2-page-scroll';
 
 @Component({
   selector: 'cv-root',
@@ -9,6 +10,8 @@ export class AppComponent implements OnInit {
   title = 'cv works!';
 
   ngOnInit() {
+      PageScrollConfig.defaultDuration = 100;
+      PageScrollConfig.defaultInterruptible = false;
       let s = skrollr.init();
       if (s.isMobile()) {
           s.destroy()

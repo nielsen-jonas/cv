@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { LazyLoadImageModule } from 'ng2-lazyload-image';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -37,7 +38,8 @@ import { PersonalInformationComponent } from './pages/personal-information/perso
     BrowserModule,
     FormsModule,
     HttpModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    Ng2PageScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
