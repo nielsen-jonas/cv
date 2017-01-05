@@ -16,7 +16,7 @@ export class AppComponent implements AfterViewInit {
   private skrollr;
 
   ngAfterViewInit() {
-      PageScrollConfig.defaultDuration = 100;
+      PageScrollConfig.defaultDuration = 300;
       PageScrollConfig.defaultInterruptible = false;
       this.skrollr = skrollr.init();
       this.skrollrOn = true;
