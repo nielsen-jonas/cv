@@ -34,3 +34,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#header {
+    position: fixed;
+    z-index: 5;
+}

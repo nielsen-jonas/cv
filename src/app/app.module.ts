@@ -8,7 +8,6 @@ import { LazyLoadImageModule } from 'ng2-lazyload-image';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TechnologiesComponent } from './pages/technologies/technologies.component';
@@ -24,7 +23,6 @@ import { MobileNavigationComponent } from './mobile-navigation/mobile-navigation
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
     SidebarComponent,
     TechnologiesComponent,

@@ -11,7 +11,6 @@ export class AppComponent implements AfterViewInit {
   title = 'cv works!';
   public imageReload = true;
   private resizeTimer = null;
-  private reloadTimer;
   private skrollrOn = false;
   private skrollr;
 

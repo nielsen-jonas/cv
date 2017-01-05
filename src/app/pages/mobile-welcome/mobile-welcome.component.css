@@ -1,6 +1,15 @@
 .media {
     text-align: right;
 }
+
 img { 
     margin-left: 1rem;
+}
+
+#printable-pdf {
+    float: left;
+}
+
+#welcome-top-padding {
+    height: 7rem;
 }
