@@ -1,6 +1,6 @@
 <cv-mobile-navigation></cv-mobile-navigation>
 <div id="skrollr-body">
-<div id="sidebar" class="hidden-xs">
+<aside id="sidebar" class="hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-md-9">
@@ -14,8 +14,8 @@
             </div>
         </div>
     </div>
-</div>
-<div id="mobile-welcome">
+</aside>
+<header id="mobile-welcome">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container">
@@ -24,8 +24,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="technologies" class="cv-image-container">
+</header>
+<section id="technologies" class="cv-image-container">
     <div *ngIf="imageReload" class="cv-image-layer" [lazyLoad]="imgTechnologies()"
         data-smooth-scrolling="off"
         data-bottom-top="background-position: 0px 64px;"
@@ -38,8 +38,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="ambition">
+</section>
+<section id="ambition">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container"
@@ -53,8 +53,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="portfolio" class="cv-image-container">
+</section>
+<section id="portfolio" class="cv-image-container">
     <div *ngIf="imageReload" class="cv-image-layer" [lazyLoad]="imgPortfolio()"
         data-smooth-scrolling="off"
         data-bottom-top="background-position: 0px 64px;"
@@ -67,8 +67,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="personal">
+</section>
+<section id="personal">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9">
@@ -94,8 +94,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="education" class="cv-image-container">
+</section>
+<section id="education" class="cv-image-container">
     <div *ngIf="imageReload" class="cv-image-layer" [lazyLoad]="imgEducation()"
         data-smooth-scrolling="off"
         data-bottom-top="background-position: 0px 64px;"
@@ -108,8 +108,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="links">
+</section>
+<section id="links">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container"
@@ -121,8 +121,8 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
-<div id="footer">
+</section>
+<footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-md-9 component-container">
@@ -131,5 +131,5 @@
             <div class="col-xs-0 col-sm-4 col-md-3"></div>
         </div>
     </div>
-</div>
+</footer>
 </div>
