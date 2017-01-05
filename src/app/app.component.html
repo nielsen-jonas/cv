@@ -36,7 +36,7 @@
     </div>
 </div>
 <div id="technologies" class="cv-image-container">
-    <div class="cv-image-layer" [lazyLoad]="imgTechnologies()"
+    <div *ngIf="imageReload" class="cv-image-layer" [lazyLoad]="imgTechnologies()"
         data-smooth-scrolling="off"
         data-bottom-top="background-position: 0px 64px;"
         data-top-bottom="background-position: 0px -64px;"></div>
@@ -64,7 +64,7 @@
     </div>
 </div>
 <div id="portfolio" class="cv-image-container">
-    <div class="cv-image-layer" [lazyLoad]="imgPortfolio()"
+    <div *ngIf="imageReload" class="cv-image-layer" [lazyLoad]="imgPortfolio()"
         data-smooth-scrolling="off"
         data-bottom-top="background-position: 0px 64px;"
         data-top-bottom="background-position: 0px -64px;"></div>
@@ -103,7 +103,7 @@
     </div>
 </div>
 <div id="education" class="cv-image-container">
-    <div class="cv-image-layer" [lazyLoad]="imgEducation()"
+    <div *ngIf="imageReload" class="cv-image-layer" [lazyLoad]="imgEducation()"
         data-smooth-scrolling="off"
         data-bottom-top="background-position: 0px 64px;"
         data-top-bottom="background-position: 0px -64px;"></div>

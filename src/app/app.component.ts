@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit, HostListener } from '@angular/core';
 import { PageScrollConfig } from 'ng2-page-scroll';
 
 @Component({
@@ -6,15 +6,23 @@ import { PageScrollConfig } from 'ng2-page-scroll';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'cv works!';
 
-  ngOnInit() {
+export class AppComponent implements AfterViewInit {
+  title = 'cv works!';
+  public imageReload = true;
+  private resizeTimer = null;
+  private reloadTimer;
+  private skrollrOn = false;
+  private skrollr;
+
+  ngAfterViewInit() {
       PageScrollConfig.defaultDuration = 100;
       PageScrollConfig.defaultInterruptible = false;
-      let s = skrollr.init();
-      if (s.isMobile()) {
-          s.destroy()
+      this.skrollr = skrollr.init();
+      this.skrollrOn = true;
+      if (this.skrollr.isMobile()) {
+          this.skrollr.destroy()
+          this.skrollrOn = false;
       }
   }
 
@@ -41,5 +49,21 @@ export class AppComponent implements OnInit {
   private getRandomInt(min: number, max: number): string {
       let num = Math.floor(Math.random() * (1 + max - min)) + min;
       return num.toString(); 
+  }
+
+  @HostListener('window:resize', ['$event'])
+  private onResize(event) {
+      if (this.resizeTimer === null) {
+          this.imageReload = false;
+          this.resizeTimer = setTimeout(() => {
+              this.imageReload = true;
+              if (this.skrollrOn) {
+                  window.requestAnimationFrame(() => {
+                      this.skrollr.refresh();
+                  });
+              }
+              this.resizeTimer = null;
+          }, 1000);
+      }
   }
 }
