@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|UnifrakturCook:700');
 
 /* PALETTE
  * http://www.colourlovers.com/palette/482774/dream_magnet
@@ -13,6 +14,7 @@ body::-webkit-scrollbar {
 
 body, .cv-base-color {
     color: #222;
+    font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 nav, h1, h2, h3 {
